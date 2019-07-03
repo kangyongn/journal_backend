@@ -35,7 +35,7 @@ class Api::V1::JournalsController < ApplicationController
   private
 
   def journal_params
-    params.permit()
+    params.permit(:user_id, :content)
   end
 
   def get_journal
